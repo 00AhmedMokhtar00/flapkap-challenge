@@ -1,18 +1,18 @@
-# Flapkap Challenge [simple visual dashboard for viewing orders statistics]
+# Quick Challenge [simple visual dashboard for viewing orders statistics]
 
-<img align="center" alt="png" src="readme-assets/logo.png"/>
 
   
 ### Running on real android device [as an application & website] & ios Emulator (iphone 12 pro max)
 
 <br>
 
-<p float="left">
-  <img  alt="GIF" src="readme-assets/flapkap-mobile.gif" height="550" align="left"/>
-  <img  alt="GIF" src="readme-assets/flapkap-ios.gif" height="600" align="right"/>
+<p float="center">
+  <img  alt="GIF" src="readme-assets/flapkap-mobile.gif" height="580" />
+  <b style="word-space:2em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+  <img  alt="GIF" src="readme-assets/flapkap-ios.gif" height="600" />
 </p>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### Running on desktop [google chrome on a macbook machine]
 
