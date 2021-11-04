@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
 
-class StatisticsWidget extends StatelessWidget {
+class StatisticsItem extends StatelessWidget {
   final bool loading;
   final String? title;
   final String? statisticalData;
-  const StatisticsWidget(
+  const StatisticsItem(
       {Key? key, this.title, this.statisticalData, this.loading = false})
       : super(key: key);
 
