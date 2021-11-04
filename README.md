@@ -23,7 +23,7 @@
 
  - Downloading android apk from [here][apk]
  
- - visiting the demo website from [here][website]
+ - Visiting the demo website from [here][website]
 
 
 [apk]: https://drive.google.com/file/d/1-EExxuXaAfYfU_y94nQG68tM8YFogkFr/view?usp=sharing
