@@ -27,4 +27,4 @@
 
 
 [apk]: https://drive.google.com/file/d/1-EExxuXaAfYfU_y94nQG68tM8YFogkFr/view?usp=sharing
-[website]: https://00ahmedmokhtar00.github.io/flapkap-challenge/
+[website]: https://00ahmedmokhtar00.github.io/quick-challenge/
