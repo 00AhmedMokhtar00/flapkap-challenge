@@ -1,4 +1,4 @@
-# Quick Challenge [simple visual dashboard for viewing orders statistics]
+# Quick Challenge [simple responsive visual dashboard for viewing orders statistics]
 
 
   
