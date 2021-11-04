@@ -1,10 +1,11 @@
-# Quick Challenge [simple responsive visual dashboard for viewing orders statistics]
+# Quick Challenge
+## Simple (clean-coded architecture) responsive visual dashboard for viewing orders statistics [built using flutter with bloc pattern].
 
 
   
 ### Running on real android device [as an application & website] & ios Emulator (iphone 12 pro max)
 
-<br>
+
 
 <p float="center">
   <img  alt="GIF" src="readme-assets/flapkap-mobile.gif" height="580" />
@@ -12,10 +13,10 @@
   <img  alt="GIF" src="readme-assets/flapkap-ios.gif" height="600" />
 </p>
 
-
+<br><br>
 
 ### Running on desktop [google chrome on a macbook machine]
-
+<br>
 <img align="center" alt="GIF" src="readme-assets/flapkap-web.gif" height="500" />
 
 
