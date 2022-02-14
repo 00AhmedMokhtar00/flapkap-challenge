@@ -68,21 +68,40 @@ class OrderRepository implements BaseOrderRepository {
   GraphStatistics getGraphInformation(List<Order> orders) {
     List<GraphInformation> graphInformation = List.empty(growable: true);
     late GraphStatistics graphStatistics;
-    Map<String, int> graphInformationMap = {};
 
     for (var order in orders) {
-      graphInformationMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!]
-      = (graphInformationMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!] ?? 0)
-          + 1;
+      graphInformationRowMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!] =
+          (graphInformationRowMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!]?? 0) + 1;
     }
-    graphInformationMap.forEach((month, orders) => graphInformation
-        .add(GraphInformation(monthName: month, monthOrdersNumber: orders)));
+
+    graphInformationRowMap.forEach((month, orders) {
+      if(orders == 0){
+        return;
+      }
+      return graphInformation
+          .add(GraphInformation(monthName: month, monthOrdersNumber: orders));
+    });
 
     graphStatistics = GraphStatistics(
         graphInformation: graphInformation,
     );
     return graphStatistics;
   }
+
+  final Map<String, int> graphInformationRowMap = {
+    "Jan":  0,
+    "Feb":  0,
+    "Mar":  0,
+    "Apr":  0,
+    "May":  0,
+    "Jun":  0,
+    "Jul":  0,
+    "Aug":  0,
+    "Sep":  0,
+    "Oct":  0,
+    "Nov":  0,
+    "Dec":  0
+  };
 
   final Map<int, String> _monthsInYear = {
     1: "Jan",
