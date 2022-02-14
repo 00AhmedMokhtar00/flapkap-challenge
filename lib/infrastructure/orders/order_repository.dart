@@ -54,10 +54,9 @@ class OrderRepository implements BaseOrderRepository {
 
     for (var order in orders) {
       totalReturns = totalReturns + (order.status == "RETURNED" ? 1 : 0);
-    }
-    for (var order in orders) {
       totalPrices += double.parse(order.price);
     }
+
     orderStatistics = OrderStatistics(
         totalOrders: totalOrder,
         numberOfReturns: totalReturns,
@@ -70,23 +69,18 @@ class OrderRepository implements BaseOrderRepository {
     List<GraphInformation> graphInformation = List.empty(growable: true);
     late GraphStatistics graphStatistics;
     Map<String, int> graphInformationMap = {};
-    int maxOrdersNumber = 0, minOrdersNumber = -1;
 
     for (var order in orders) {
-      graphInformationMap[
-              _monthsInYear[int.parse(order.registered.substring(5, 7))]!] =
-          (graphInformationMap[_monthsInYear[
-                      int.parse(order.registered.substring(5, 7))]!] ??
-                  0) +
-              1;
+      graphInformationMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!]
+      = (graphInformationMap[_monthsInYear[int.parse(order.registered.substring(5, 7))]!] ?? 0)
+          + 1;
     }
     graphInformationMap.forEach((month, orders) => graphInformation
         .add(GraphInformation(monthName: month, monthOrdersNumber: orders)));
 
     graphStatistics = GraphStatistics(
         graphInformation: graphInformation,
-        minOrders: minOrdersNumber,
-        maxOrders: maxOrdersNumber);
+    );
     return graphStatistics;
   }
 

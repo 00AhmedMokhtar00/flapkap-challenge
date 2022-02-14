@@ -52,6 +52,8 @@ class GraphWidget extends StatelessWidget {
                   name: TextValue.SALES_TEXT,
                   borderRadius: const BorderRadius.all(Radius.circular(8.0)),
                   dataLabelSettings: const DataLabelSettings(isVisible: true))
-            ]));
+            ]
+        )
+    );
   }
 }
